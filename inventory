@@ -2,5 +2,5 @@
 web01
 web02
 
-[databaseservers]
+[databases]
 db[01:02]
