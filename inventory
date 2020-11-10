@@ -1,6 +1,6 @@
 [webservers]
 web01
 web02
+
 [databaseservers]
-db01
-db02
+db[01:02]
