@@ -1,0 +1,7 @@
+# Host variables for the server1 on local network
+---
+become_ask_pass: True
+ansible_host: 192.168.1.31
+ansible_port: 22
+ansible_user: ubuntu
+ansible_become: true
