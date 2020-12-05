@@ -1,8 +1,0 @@
-# Host variables for the db01 system
----
-become_ask_pass: True
-custom_db_port: 1234
-
-# ansible-inventory -i inventory --list
-# ansible databases --limit db01 -m ping
-# ssh web01

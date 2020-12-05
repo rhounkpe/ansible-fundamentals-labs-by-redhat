@@ -2,12 +2,7 @@
 - name: New user is created
   hosts: localservers
   become: true
-  vars:
-    username:
-      test:
-        uname: test
-        description: Test User Account
-
+  
   tasks:
     - name: User gets created
       user:

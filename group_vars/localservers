@@ -1,0 +1,5 @@
+# Variables for the locaservers group
+username:
+    test:
+        uname: test
+        description: Test User Account
