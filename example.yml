@@ -3,10 +3,14 @@
   hosts: localservers
   become: true
   vars:
-    username: test
+    username:
+      test:
+        uname: test
+        description: Test User Account
 
   tasks:
     - name: User gets created
       user:
-        name: "{{ username }}"
+        name: "{{ username['test']['uname'] }}"
+        comment: "{{ username['test']['description'] }}"
         state: present
