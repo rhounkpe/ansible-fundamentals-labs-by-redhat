@@ -2,9 +2,11 @@
 - name: New user is created
   hosts: localservers
   become: true
+  vars:
+    username: test
 
   tasks:
     - name: User gets created
       user:
-        name: test
+        name: "{{ username }}"
         state: present
